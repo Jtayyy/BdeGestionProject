@@ -8,6 +8,6 @@ neonConfig.webSocketConstructor = ws;
 neonConfig.poolQueryViaFetch = true;
 
 export const db = () => {
-    const pool = new Pool({connectionString: env.databaseUrl});
-    return drizzle({client: pool, ws, schema});
+  const pool = new Pool({ connectionString: env.databaseUrl });
+  return drizzle({ client: pool, ws, schema });
 };

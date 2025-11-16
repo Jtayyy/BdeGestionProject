@@ -6,12 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
+    "lint": "biome check",
+    "format": "biome format --write",
     "db:generate": "npx drizzle-kit generate",
     "db:migrate": "npx drizzle-kit migrate",
     "db:push": "npx drizzle-kit push"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.35.1",
     "@neondatabase/serverless": "^1.0.2",
     "dotenv": "^17.2.3",
     "drizzle-orm": "^0.44.7",
@@ -21,6 +23,7 @@
     "ws": "^8.18.3"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.2.3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
