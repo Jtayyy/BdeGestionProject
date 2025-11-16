@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "npx drizzle-kit push && next start",
     "lint": "biome check",
     "format": "biome format --write",
     "db:generate": "npx drizzle-kit generate",
